@@ -1,19 +1,19 @@
-name:                lecture16
+name:                lecture
 version:             1.0.0.0
-homepage:            https://github.com/fpclass/lecture16#readme
+homepage:            https://github.com/fpclass/lecture18#readme
 author:              Michael B. Gale
 maintainer:          m.gale@warwick.ac.uk
-copyright:           Copyright 2019 Michael B. Gale
+copyright:           Copyright 2020 Michael B. Gale
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lecture16
+  exposed-modules:     Lecture
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
 
 source-repository head
   type:     git
-  location: https://github.com/fpclass/lecture16
+  location: https://github.com/fpclass/lecture18

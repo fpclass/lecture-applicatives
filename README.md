@@ -1,2 +1,3 @@
-# lecture16
-Code shown in the 16th lecture
+# Lecture: Applicative Functors (cont.)
+
+Code shown in the CS141 lecture on applicative functors (continued).
