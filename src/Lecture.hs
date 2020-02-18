@@ -109,17 +109,4 @@ ex4 = fmap (+5) $ MkWriter (4,[])
 writeLog :: String -> Writer [String] ()
 writeLog msg = MkWriter ((), [msg])
 
-instance Monoid w => Applicative (Writer w) where
-    pure x = MkWriter (x, mempty)
-
-    MkWriter (f,o1) <*> MkWriter (x,o2) = MkWriter (f x, o1 <> o2)
-
-compWriter :: Expr -> Writer [String] Program
-compWriter (Val n)    = writeLog "compiling a value" *> pure [PUSH n]
-compWriter (Plus l r) = writeLog "compiling a plus" *>
-    ((\p p' -> p ++ p' ++ [ADD]) <$> compWriter l <*> compWriter r)
-
-ex5 :: Writer [String] Program
-ex5 = compWriter (Plus (Val 4) (Val 8))
-
 --------------------------------------------------------------------------------
