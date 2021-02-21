@@ -1,9 +1,9 @@
 name:                lecture
 version:             1.0.0.0
-homepage:            https://github.com/fpclass/lecture18#readme
+homepage:            https://github.com/fpclass/lecture-applicatives#readme
 author:              Michael B. Gale
 maintainer:          m.gale@warwick.ac.uk
-copyright:           Copyright 2020 Michael B. Gale
+copyright:           Copyright 2021 Michael B. Gale
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
@@ -16,4 +16,4 @@ library
 
 source-repository head
   type:     git
-  location: https://github.com/fpclass/lecture18
+  location: https://github.com/fpclass/lecture-applicatives
